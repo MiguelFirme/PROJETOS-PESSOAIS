@@ -1,22 +1,38 @@
 .navbar {
     position: fixed;
-    top: 0; width: 100%;
+    top: 0; 
+    width: 100%;
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     background: linear-gradient(to bottom, rgba(10,10,10,0.8), transparent);
+    box-sizing: border-box; /* Importante para o padding não quebrar a largura */
 }
 
-.logo { font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 2px; }
+.logo-link {
+    color: var(--text);
+    text-decoration: none;
+    font-family: var(--font-serif); 
+    font-size: 1.5rem; 
+    letter-spacing: 2px;
+}
 
 .navbar ul { display: flex; list-style: none; gap: 40px; }
-.navbar ul li a { 
-    color: var(--text); text-decoration: none; 
-    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;
+
+/* Adicionamos seletores para 'a' e componentes 'Link' (que viram 'a') */
+.navbar ul li a,
+.navbar ul li Link { 
+    color: var(--text); 
+    text-decoration: none; 
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
     transition: 0.3s;
+    cursor: pointer;
 }
+
 .navbar ul li a:hover { color: var(--accent); }
 
 @media (max-width: 768px) {

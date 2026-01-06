@@ -1,0 +1,48 @@
+.galeria-container {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: white;
+  }
+  
+  .galeria-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .back-button {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .back-button:hover {
+    color: #fff;
+  }
+  
+  .galeria-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .galeria-item img {
+    width: 100%;
+    height: 400px; /* Altura fixa para manter alinhado */
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+  }
+  
+  .galeria-item img:hover {
+    opacity: 0.8;
+  }
