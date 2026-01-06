@@ -1,0 +1,24 @@
+.navbar {
+    position: fixed;
+    top: 0; width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.8), transparent);
+}
+
+.logo { font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 2px; }
+
+.navbar ul { display: flex; list-style: none; gap: 40px; }
+.navbar ul li a { 
+    color: var(--text); text-decoration: none; 
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover { color: var(--accent); }
+
+@media (max-width: 768px) {
+    .navbar ul { display: none; }
+}

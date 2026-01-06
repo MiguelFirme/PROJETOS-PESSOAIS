@@ -1,0 +1,41 @@
+:root {
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --accent: #c5a059;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* Reset Global para ocupar a tela toda */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  display: block; /* Garante que não herde flexbox do Vite */
+}
+
+footer { 
+  padding: 50px; 
+  text-align: center; 
+  font-size: 0.7rem; 
+  letter-spacing: 1px; 
+  color: #555; 
+}

@@ -1,0 +1,16 @@
+.hero {
+    width: 100%;
+    min-height: 100vh; /* Ocupa a altura toda da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Ajuste da imagem para cobrir tudo */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('../../Imagens/Perfil2.png') center/cover;
+}
+
+.hero-content {
+    width: 100%;
+    padding: 0 20px;
+}

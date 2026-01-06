@@ -1,0 +1,26 @@
+.contact { padding: 150px 10%; text-align: center; }
+.contact h2 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: 20px; }
+
+form {
+    max-width: 600px; margin: 50px auto;
+    display: flex; flex-direction: column; gap: 20px;
+}
+
+input, textarea {
+    background: transparent; border: none;
+    border-bottom: 1px solid #333;
+    padding: 15px; color: white; font-family: var(--font-sans);
+    outline: none; transition: 0.3s;
+}
+
+input:focus, textarea:focus { border-bottom: 1px solid var(--accent); }
+
+button {
+    background: transparent; border: 1px solid var(--accent);
+    color: var(--accent); padding: 15px 40px;
+    cursor: pointer; align-self: center;
+    text-transform: uppercase; letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+button:hover { background: var(--accent); color: white; }
