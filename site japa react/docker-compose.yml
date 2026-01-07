@@ -3,8 +3,8 @@ services:
   site-japa:
     build: 
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfile # Verifique se no Git o 'd' está minúsculo como na imagem
     container_name: site-japa-container
     ports:
-      - "8081:80" # Mudamos de 8080 para 8081
+      - "8081:80"
     restart: always
