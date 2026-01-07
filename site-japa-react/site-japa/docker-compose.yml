@@ -1,9 +1,9 @@
 version: '3.8'
 services:
   site-japa:
-    build: 
+    build:
       context: .
-      dockerfile: dockerfile # Verifique se no Git o 'd' está minúsculo como na imagem
+      dockerfile: dockerfile
     container_name: site-japa-container
     ports:
       - "8081:80"
