@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  site-japa:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: site-japa-container
+    ports:
+      - "8081:80" # Mudamos de 8080 para 8081
+    restart: always
